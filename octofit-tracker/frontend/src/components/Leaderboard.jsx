@@ -4,7 +4,7 @@ import { buildApiUrl, normalizeApiResponse } from '../lib/api.js';
 function Leaderboard() {
   const [rows, setRows] = useState([]);
   const [error, setError] = useState(null);
-  const apiUrl = buildApiUrl('leaderboard');
+  const apiUrl = buildApiUrl('leaderboard/');
 
   useEffect(() => {
     fetch(apiUrl)

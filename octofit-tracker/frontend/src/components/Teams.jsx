@@ -4,7 +4,7 @@ import { buildApiUrl, normalizeApiResponse } from '../lib/api.js';
 function Teams() {
   const [teams, setTeams] = useState([]);
   const [error, setError] = useState(null);
-  const apiUrl = buildApiUrl('teams');
+  const apiUrl = buildApiUrl('teams/');
 
   useEffect(() => {
     fetch(apiUrl)

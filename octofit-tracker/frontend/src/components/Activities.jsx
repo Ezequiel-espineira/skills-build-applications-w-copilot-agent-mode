@@ -4,7 +4,7 @@ import { buildApiUrl, normalizeApiResponse } from '../lib/api.js';
 function Activities() {
   const [activities, setActivities] = useState([]);
   const [error, setError] = useState(null);
-  const apiUrl = buildApiUrl('activities');
+  const apiUrl = buildApiUrl('activities/');
 
   useEffect(() => {
     fetch(apiUrl)

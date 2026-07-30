@@ -4,7 +4,7 @@ import { buildApiUrl, normalizeApiResponse } from '../lib/api.js';
 function Users() {
   const [users, setUsers] = useState([]);
   const [error, setError] = useState(null);
-  const apiUrl = buildApiUrl('users');
+  const apiUrl = buildApiUrl('users/');
 
   useEffect(() => {
     fetch(apiUrl)
